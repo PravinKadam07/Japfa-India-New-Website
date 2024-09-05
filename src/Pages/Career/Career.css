@@ -1,0 +1,77 @@
+.dolphinValuesCard .leftLine {
+	width: 1px;
+	background: #a9a9a9;
+}
+.dolphinValuesCard .cardTitle {
+	position: relative;
+}
+
+.dolphinValuesCard .cardTitle .circleDot {
+	content: "";
+	width: 1.25rem;
+	height: 1.25rem;
+	position: absolute;
+	left: -3.125rem;
+	top: calc(3.8rem);
+	background: var(
+		--Gradient-1,
+		linear-gradient(315deg, #ff2525 -0.01%, #ff8743 100%)
+	);
+	border-radius: 50%;
+}
+
+/* classes for culture 
+*/
+.career-culture-excellence-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/career-culture-excellence-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.career-culture-example-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/career-culture-example-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.career-culture-teamwork-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/career-culture-teamwork-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.career-culture-bestpractices-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/career-culture-bestpractices-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.jobForm-custom-backdrop{
+	background: rgba(3, 3, 3, 0.60);
+}
+.jobForm-uploadFile{
+	background-image: url("../../assets/solar_upload-outline.svg");
+	background-repeat: no-repeat;
+	background-position: center left 20px;
+}
+.jobForm-uploadFile::placeholder{
+	font-size: 20px;
+	color: #EC691F !important;
+}
+
+@media(max-width:768px){
+	.dolphinValuesCard .cardTitle .circleDot {
+		left:-3rem;
+		top: 3rem;
+		width:1rem;
+		height:1rem;
+	}
+}
+@media(max-width:690px){
+	.dolphinValuesCard .cardTitle .circleDot {
+		top: 2rem;
+		left:-3rem;
+		width:1rem;
+		height:1rem;
+	}
+}

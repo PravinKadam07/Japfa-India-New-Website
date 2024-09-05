@@ -1,0 +1,65 @@
+.reachus-contact-deails--wrapper {
+	position: relative;
+	background-color: #160700;
+	background-image: url("../../../public/assets/img/contact-us-details-bg.svg");
+	background-size: contain;
+	background-position: top right;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	overflow: hidden;
+}
+.reachus-contact-deails--wrapper::before {
+	content: "";
+	width: 638px;
+	height: 638px;
+	position: absolute;
+	left: -17%;
+	top: -75%;
+	border-radius: 638px;
+	opacity: 0.8;
+	background: rgba(236, 105, 31, 0.24);
+	filter: blur(174px);
+}
+.inputErrorSpan {
+	visibility: hidden;
+}
+@media (max-width: 900px) {
+	.reachus-contact-deails--wrapper::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+input:invalid[data-focused="true"] ~ .inputErrorSpan {
+	visibility: visible;
+}
+/* Presence map styling */
+
+.reachus-map .reachus-map--state {
+	cursor: pointer;
+	fill: url(#paint0_linear_10026_8484);
+	stroke: white;
+}
+
+.reachus-map .reachus-map--state:focus {
+	outline: none;
+}
+.locationText {
+	position: relative;
+	line-height: 100%;
+}
+.locationText::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	border-radius: 12px 0 0 12px;
+	background: rgba(255, 142, 79, 1);
+}

@@ -1,0 +1,23 @@
+.globalFootPrintBg {
+	position: relative;
+	background-color: #160700;
+	background-image: url("../../../public/assets/img/discover-footprints-bg.svg");
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	overflow: hidden;
+}
+.globalFootPrintBg::before {
+	content: "";
+	width: 638px;
+	height: 638px;
+	position: absolute;
+	left: -17%;
+	top: -75%;
+	border-radius: 638px;
+	opacity: 0.8;
+	background: rgba(236, 105, 31, 1);
+	filter: blur(174px);
+	z-index: 1;
+}

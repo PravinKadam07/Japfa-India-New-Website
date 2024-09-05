@@ -1,0 +1,9 @@
+.leadership-member-card img.profile-img {
+	filter: grayscale(100%);
+	transition: filter 0.15s ease-in;
+	cursor: pointer;
+}
+.leadership-member-card:hover img.profile-img {
+	filter: grayscale(0%);
+}
+

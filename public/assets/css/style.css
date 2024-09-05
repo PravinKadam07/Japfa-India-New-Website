@@ -1,0 +1,330 @@
+/* Author: f1Studioz (Mohammed Shahnawaz) 11/09/2023 */
+
+:root {
+	--japfa-primary: #ec691f;
+	--japfa-primary-light: #ff8e4f;
+	--japfa-secondary: #1b0f08;
+	--japfa-secondary-dark: #160700;
+	--japfa-black: #1e140f;
+	--japfa-maroon: #6a0600;
+	--japfa-chocolate: #2c1d16;
+	--japfa-grey: #858585;
+	--japfa-white: #ffffff;
+	--japfa-grid: 1392px;
+	--japfa-header-height: 82px;
+	--AlbertSans: "Albert Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+body,
+html {
+	font-family: var(--AlbertSans);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--japfa-black);
+	background-color: var(--japfa-white);
+	letter-spacing: normal;
+}
+
+header,
+footer {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.japfa-grid {
+	width: 100%;
+	height: auto;
+	max-width: var(--japfa-grid);
+	margin-inline: auto;
+}
+
+/* ============================================ HEADER ============================================ */
+header {
+	height: var(--japfa-header-height);
+	background-color: var(--japfa-secondary);
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo {
+	width: 95px;
+	height: auto;
+}
+
+header .logo img {
+	width: auto;
+	height: 100%;
+}
+
+@media (max-width: 414px) {
+	header .logo {
+		width: 80px;
+		height: auto;
+	}
+
+	header .logo img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+header .navigation {
+	width: fit-content;
+	height: auto;
+}
+
+header .navigation ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+
+header .navigation ul li {
+	line-height: 24px;
+	color: var(--japfa-white);
+	position: relative;
+}
+
+header .navigation ul li a {
+	text-decoration: none;
+	color: var(--japfa-white);
+	position: relative;
+}
+
+header .navigation ul li a::after {
+	position: absolute;
+	content: "";
+	bottom: -4px;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	transform: scale(0, 1);
+	transform-origin: left center;
+	border-bottom: 1px solid var(--japfa-white);
+	transition:
+		transform 0.3s,
+		opacity 0.3s;
+}
+
+header .navigation ul li a:hover::after {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+header .navigation ul li.has-menu {
+	margin-right: 30px;
+}
+
+header .navigation ul li.has-menu::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+	width: 10px;
+	height: 6px;
+	background-image: url("../img/icons/menu-dropdown.svg");
+}
+
+header .header-right {
+	width: auto;
+	min-width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+@media (max-width: 414px) {
+	header .header-right {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 360px) {
+	header .header-right {
+		gap: 6px;
+	}
+}
+
+header .header-right .hamburger {
+	width: 25px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-left: 18px;
+}
+
+@media (max-width: 414px) {
+	header .header-right .hamburger {
+		margin-left: 12px;
+	}
+}
+
+header .header-right .hamburger span {
+	width: 100%;
+	height: 2.4px;
+	background-color: var(--japfa-white);
+	border-radius: 35px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+header .header-right .hamburger span:nth-child(2) {
+	width: 6px;
+}
+
+header .header-right .hamburger span:nth-child(3) {
+	width: 14px;
+}
+
+header .header-right .hamburger:hover {
+	cursor: pointer;
+}
+
+header .header-right .hamburger:hover span {
+	width: 100% !important;
+}
+
+header .header-right .header-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+header .header-right .header-icon img {
+	opacity: 0.5;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+header .header-right .header-icon:hover img {
+	opacity: 1;
+}
+
+header .language button {
+	position: relative;
+	line-height: 24px;
+	padding-right: 14px;
+	margin-right: 8px;
+	background-color: transparent;
+	color: var(--japfa-grey);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+	header .language {
+		display: none;
+	}
+}
+
+header .language button:hover {
+	color: var(--japfa-white);
+}
+
+header .language .dropdown-menu {
+	margin-top: 25px !important;
+}
+
+header .language button.dropdown-toggle::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	opacity: 0.5;
+	background-image: url("../img/icons/menu-dropdown.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+header .language button.dropdown-toggle:hover::after {
+	opacity: 1;
+}
+
+header button.login-btn {
+	background-color: rgba(255, 255, 255, 0.04);
+	color: var(--japfa-primary-light);
+	padding: 8px 12px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	margin-right: 4px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+	header button.login-btn {
+		display: none;
+		margin-right: 0;
+	}
+}
+
+header button.login-btn:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}

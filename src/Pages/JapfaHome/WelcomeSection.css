@@ -1,0 +1,250 @@
+/* ================================================= WELCOME JAPFA LAYOUT =================================================   */
+.welcome-top-padding {
+  padding: 160px 0px;
+}
+
+@media (max-width: 475px) {
+  .welcome-top-padding {
+    padding: 80px 0;
+  }
+}
+
+.welcome-japfa {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  gap: 140px;
+}
+
+@media (max-width: 1440px) {
+  .welcome-japfa {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-japfa {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-japfa {
+    gap: 20px;
+  }
+}
+
+.welcome-japfa .welcome-left {
+  width: calc(50% - 70px);
+  height: auto;
+  padding-top: 60px;
+  background: linear-gradient(124deg, #ffba93 0%, #ff9356 91.35%);
+  border-radius: 0 80px 0 0;
+}
+
+@media (max-width: 1440px) {
+  .welcome-japfa .welcome-left {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-japfa .welcome-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-japfa .welcome-left {
+    padding-top: 30px;
+    border-radius: 0 40px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome-japfa .welcome-left {
+    padding-top: 30px;
+    border-radius: 0 100px 0 0;
+  }
+}
+
+.welcome-japfa .welcome-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-japfa .welcome-right {
+  width: calc(calc(var(--japfa-grid) / 2) - 70px);
+  max-width: 590px;
+  height: auto;
+  min-height: 100px;
+}
+
+.welcome-japfa .welcome-right.mobile {
+  display: none;
+}
+
+.welcome-japfa .welcome-right.desktop .welcome-title,
+.welcome-japfa .welcome-right.desktop .welcome-img {
+  display: flex;
+}
+
+@media (max-width: 1440px) {
+  .welcome-japfa .welcome-right {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-japfa .welcome-right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .welcome-japfa .welcome-right.mobile {
+    display: block;
+  }
+
+  .welcome-japfa .welcome-right.desktop .welcome-title,
+  .welcome-japfa .welcome-right.desktop .welcome-img {
+    display: none;
+  }
+}
+
+.welcome-title {
+  width: 100%;
+  height: auto;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 90px;
+}
+
+@media (max-width: 1280px) {
+  .welcome-title {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-title {
+    font-size: 54px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+}
+
+.welcome-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10;
+  margin: 60px 0 40px 0;
+}
+
+@media (max-width: 1660px) {
+  .welcome-img {
+    margin: 60px 0 40px -43px;
+  }
+
+  .welcome-img img {
+    max-width: calc(100% + 200px);
+  }
+}
+
+@media (max-width: 1440px) {
+  .welcome-img {
+    margin: 60px 0 40px -10px;
+  }
+
+  .welcome-img img {
+    width: calc(100% + 100px);
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-img {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 575px) {
+    .welcome-img {
+      margin: 16px 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .welcome-img img {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome-img img {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 475px) {
+  .welcome-img img {
+    width: 100%;
+  }
+}
+
+.welcome-desc {
+  width: 565px;
+  height: auto;
+}
+
+.welcome-desc p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+
+.welcome-desc p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .welcome-desc p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .welcome-desc p:first-child {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome-desc {
+    width: 342px;
+  }
+}

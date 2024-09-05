@@ -1,0 +1,12 @@
+.career-page-carousel .slick-slide {
+	opacity: 0.3;
+	filter: blur(2px);
+	transform: scale(0.9);
+	
+}
+
+.career-page-carousel .slick-slide.slick-active.slick-current {
+	opacity: 1;
+	filter: blur(0px);
+	transform: scale(1);
+}

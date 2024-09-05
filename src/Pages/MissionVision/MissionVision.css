@@ -1,0 +1,42 @@
+.guidingPhilosophy {
+	background-image: url("../../../public/assets/img/mv-good-always.svg");
+	background-size: 70%;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.shareholder-excellence-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-excellence-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.business-partnership-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-partnership-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.customer-centric-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-customer-centric-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.supplier-relationship-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-supplier-relationship-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.employee-empowerment-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-employee-empowerment-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+.community-commitment-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/mv-values-commitment-bg.webp");
+	background-size: cover;
+	background-position: top;
+}

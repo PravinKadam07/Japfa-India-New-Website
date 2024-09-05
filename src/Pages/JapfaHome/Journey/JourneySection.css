@@ -1,0 +1,36 @@
+.add-heading-icon.heading-icon-journey-section {
+	position: relative;
+}
+.add-heading-icon.heading-icon-journey-section::before {
+	position: absolute;
+	top: -25%;
+	left: -25px;
+	content: url("../../../../public/assets/img/icon-before-heading.svg");
+}
+
+@media (min-width: 522px) {
+	.add-heading-icon.heading-icon-journey-section::before {
+		left: -7%;
+		top: -30px;
+	}
+}
+
+@media (min-width: 641px) {
+	.add-heading-icon.heading-icon-journey-section::before {
+		left: -14%;
+		top: -35px;
+	}
+}
+
+@media (min-width: 769px) {
+	.add-heading-icon.heading-icon-journey-section::before {
+		left: -9%;
+		top: -45px;
+	}
+}
+@media (min-width: 1025px) {
+	.add-heading-icon.heading-icon-journey-section::before {
+		left: -9%;
+		top: -55px;
+	}
+}

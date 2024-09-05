@@ -1,0 +1,169 @@
+/* ================================================= SECTIONS ELEMENTS =================================================   */
+
+section.default-padding {
+	/* padding: 0 5px 120px; */
+}
+
+.section-title {
+	font-size: 88px;
+	font-weight: 700;
+	line-height: normal;
+	color: var(--japfa-black);
+}
+
+.tending-section-col-12 {
+	padding-top: 120px;
+}
+
+@media (max-width: 1200px) {
+	.section-title {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 475px) {
+	.tending-section-col-12 {
+		padding: 0 24px 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-title {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 475px) {
+	.section-title {
+		font-size: 40px;
+	}
+}
+
+.section-sub-title {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	color: var(--japfa-black);
+	margin-top: 12px;
+}
+
+@media (max-width: 1200px) {
+	.section-sub-title {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-sub-title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 475px) {
+	.section-sub-title {
+		font-size: 14px;
+		line-height: 18px;
+		margin-top: 16px;
+	}
+}
+
+section hr {
+	margin: 40px 0 60px 0;
+
+	background-color: var(--japfa-black);
+	opacity: 1;
+}
+
+/* @media (max-width: 768px) {
+	section hr {
+	}
+} */
+
+/* ================================================= ARTICLES =================================================   */
+
+.article-container {
+	width: 100%;
+	height: auto;
+	color: var(--japfa-black);
+}
+
+.article-img img {
+	width: 100%;
+	height: auto;
+}
+
+.article-container .article-block {
+	margin-bottom: 30px;
+}
+
+.article-container .article-block.last-article {
+	margin-bottom: 0;
+}
+
+.article-container .article-block .article-title {
+	height: auto;
+	padding-right: 40px;
+	margin: 20px 0;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+@media (min-width: 475px) {
+	.article-container .article-block .article-title {
+		width: 405px;
+	}
+}
+
+@media (max-width: 768px) {
+	.article-container .article-block .article-title {
+		padding-right: 20px;
+		margin: 15px 0;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 475px) {
+	.article-container .article-block .article-title {
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+
+.article-container .article-block .article-date {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+@media (max-width: 475px) {
+	.article-container .article-block .article-date {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.article-container hr {
+		margin: 40px 0 20px 0;
+	}
+}
+
+/* @media (max-width: 991px) {
+	.section-cta {
+		padding: 0 20px;
+	}
+} */
+
+@media (max-width: 475px) {
+	section {
+		padding: 0;
+	}
+}
+
+.article-container hr {
+	margin: 50px 0px 30px;
+}

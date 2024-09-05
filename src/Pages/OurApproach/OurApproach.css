@@ -1,0 +1,20 @@
+.approach-step-card {
+	transition: height 0.7s ease;
+	position:sticky;
+	top: calc(120px + (var(--index) * 120));
+	scroll-snap-type: proximity;
+}
+.approach-steps-wrapper .approach-step-card {
+	background-color: #5e3a27;
+}
+.approach-steps-wrapper .approach-step-card:nth-child(2) {
+	background-color: #3d281d;
+}
+.approach-steps-wrapper .approach-step-card:nth-child(3) {
+	background-color: #1e140f;
+}
+/* @media(max-width:1280px){
+	.approach-step-card-height{
+		height: fit-content !important;
+	}
+} */

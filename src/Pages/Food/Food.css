@@ -1,0 +1,84 @@
+.food-quality-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/food-quality-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+
+.food-convenience-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/food-convenience-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+
+.food-freshness-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/food-freshness-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+
+.food-affordable-bg {
+	background: linear-gradient(315deg, rgba(6, 6, 6, 0.6), rgba(6, 6, 6, 0.6)),
+		url("../../../public/assets/img/food-affordable-bg.webp");
+	background-size: cover;
+	background-position: top;
+}
+
+.japfaBestLinkbanner {
+	background: url("../../../public/assets/img/japfa-best-link-bg.svg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.explore-text-icon::before {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -20px;
+	left: -30px;
+	content: url("../../../public/assets/img/icon-before-heading.svg");
+}
+
+/* quality heart mobile device slider styles starts */
+
+.food-page-slick .slick-center img {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+.food-page-slick .slick-slide:not(.slick-center) img {
+	transform: scale(1);
+	opacity: 0.7;
+	transition:
+		transform 0.5s,
+		opacity 0.5s;
+}
+
+.food-page-slick .slick-dots {
+	padding: 0.2rem 0 !important;
+
+	li {
+		margin: 0 2.5px !important;
+	}
+
+	button {
+		width: 4px !important;
+		height: 4px !important;
+		border-radius: 100%;
+		background-color: #ffffff33 !important;
+		text-indent: -9999px;
+	}
+
+	li.slick-active button {
+		background-color: #ffffff !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
+}
+
+/* quality heart mobile device slider styles ends */
+.dotlottie-container.main {
+	min-height: unset !important;
+}
